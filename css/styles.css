@@ -9,6 +9,26 @@
   --black-color: #000000;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -18,9 +38,36 @@
 body {
   font-family: var(--main-font);
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*-------------COMPONENT------------*/
+
 /*-------------HEADER------------*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu-contakt {
+  display: flex;
+  margin-left: auto;
+}
 
 .logo-link {
+  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -48,6 +95,15 @@ body {
   color: var(--accent-color);
 }
 .contakt-link {
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  margin-right: 50px;
+}
+.tel-link {
   font-style: 400;
   font-weight: 500;
   font-size: 14px;
