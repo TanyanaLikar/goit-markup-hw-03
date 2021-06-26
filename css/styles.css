@@ -7,6 +7,7 @@
   --background-color: #2f303a;
   --white-color: #ffffff;
   --black-color: #000000;
+  --card-set-gap: (100%/);
 }
 
 h1,
@@ -50,19 +51,23 @@ body {
   padding-bottom: 94px;
 }
 /*-------------COMPONENT------------*/
+.title {
+  margin-bottom: 50px;
+}
 
+.secondary-title {
+  margin-bottom: 10px;
+}
 /*-------------HEADER------------*/
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
+.header-container,
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .menu-item:not(:last-child) {
@@ -157,7 +162,16 @@ body {
 }
 /*------------------ END HERO -----------------*/
 /*------- WORK --------*/
-
+.work-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.work-section-item {
+  flex-basis: calc(100% -120px / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .work-section-title {
   font-weight: 700;
   font-size: 14px;
@@ -176,13 +190,25 @@ body {
 
 /*-----------END WORK-----------*/
 
+/*-----------ABOUT--------------*/
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.about-list-item {
+  flex-basis: calc(100% -90px / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/*----------- END ABOUT--------------*/
 /*-------------TEAM--------------*/
 .team {
   background-color: #f5f4fa;
 }
-.title {
-  margin-bottom: 50px;
-}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -255,8 +281,17 @@ body {
 /*--------------END FOOTER---------*/
 
 /*--------------- PORTFOLIO-BUTTON------------*/
+.portfolio-list {
+  display: flex;
+}
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-btn {
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -269,6 +304,17 @@ body {
 /*------------- END PORTFOLIO-BUTTON------------*/
 
 /*--------------description-------------*/
+.card-site {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.site-item {
+  flex-basis: calc(100% -90px / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .site-title {
   font-weight: 700;
   font-size: 18px;
