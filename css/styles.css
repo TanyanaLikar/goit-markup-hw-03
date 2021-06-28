@@ -306,6 +306,8 @@ body {
 /*--------------- PORTFOLIO-BUTTON------------*/
 .portfolio-list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -344,6 +346,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 .description-name {
   font-weight: 400;
@@ -351,4 +354,9 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+.portfolio-box {
+  padding: 24px 20px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
