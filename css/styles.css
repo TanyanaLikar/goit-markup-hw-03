@@ -62,7 +62,7 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container,
 .menu {
@@ -93,7 +93,7 @@ body {
 .menu-item-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -136,6 +136,10 @@ body {
 /*------------------HERO-----------------*/
 .hero {
   background-color: var(--background-color);
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -145,6 +149,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -162,6 +169,9 @@ body {
 }
 /*------------------ END HERO -----------------*/
 /*------- WORK --------*/
+.work-section {
+  padding-top: 94px;
+}
 .work-list {
   display: flex;
   margin-left: -30px;
@@ -235,6 +245,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .profession {
   font-weight: 400;
@@ -244,14 +255,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+.team-box {
+  padding: 30px 32px;
+}
+
 /*------------END TEAM---------*/
 
 /*--------------FOOTER----------*/
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .address {
   font-style: inherit;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-logo-link {
   font-family: var(--secondary-font);
@@ -260,6 +281,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-address {
   font-weight: 400;
